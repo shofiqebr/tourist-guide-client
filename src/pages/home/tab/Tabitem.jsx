@@ -1,5 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import OverView from './OverView';
 
 const Tabitem = () => {
   return (
@@ -11,7 +12,7 @@ const Tabitem = () => {
     </TabList>
 
     <TabPanel>
-      <h2>Any content 1</h2>
+      <h2><OverView></OverView></h2>
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>
