@@ -8,6 +8,8 @@ import Home from "../pages/home/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import DashBoard from "../pages/dashboard/DashBoard";
+import PackageDetail from "../pages/packageDetail/PackageDetail";
+import AllPackages from "../pages/home/tab/ourPackages/allPackages/AllPackages";
 
   const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ import DashBoard from "../pages/dashboard/DashBoard";
         {
           path: 'dashboard',
           element: <DashBoard></DashBoard>,
+        },
+        {
+          path: 'packageDetail',
+          element: <PackageDetail></PackageDetail>,
+        },
+        {
+          path: 'allpackages',
+          element: <AllPackages></AllPackages>,
         }
       ]
     },
