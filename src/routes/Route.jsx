@@ -10,6 +10,7 @@ import Register from "../pages/Register";
 import DashBoard from "../pages/dashboard/DashBoard";
 import PackageDetail from "../pages/packageDetail/PackageDetail";
 import AllPackages from "../pages/home/tab/ourPackages/allPackages/AllPackages";
+import TourType from "../pages/home/tourType/TourType";
 
   const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ import AllPackages from "../pages/home/tab/ourPackages/allPackages/AllPackages";
         {
           path: 'allpackages',
           element: <AllPackages></AllPackages>,
+        },
+        {
+          path: 'tourType',
+          element: <TourType></TourType>
         }
       ]
     },
