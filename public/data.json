@@ -1,0 +1,59 @@
+[
+    {
+      "spotPhoto": "https://i.ibb.co/qWPZqVW/istockphoto-1137892510-612x612.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Nature",
+      "tripTitle": "Sundarbans Adventure",
+      "price": 8000
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/x8bXYfG/coxs-bazar-2894646-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Beach",
+      "tripTitle": "Cox's Bazar Getaway",
+      "price": 6000
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/55KVR3y/city-7369870-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Cultural",
+      "tripTitle": "Discover Dhaka",
+      "price": 4000
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/xY9NBM7/tea-2282754-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Adventure",
+      "tripTitle": "Tea Gardens of Srimangal",
+      "price": 5500
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/d4jJf6P/sylhet-4296348-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Adventure",
+      "tripTitle": "Explore Sylhet Mountains",
+      "price": 7000
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/2YR7T9z/everglades-73423-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Nature",
+      "tripTitle": "Ratargul Swamp Expedition",
+      "price": 4500
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/XLF0GZS/sonargaon-4002382-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Cultural",
+      "tripTitle": "Sonargaon Heritage Tour",
+      "price": 3000
+    },
+    {
+      "spotPhoto": "https://i.ibb.co/ZKfTw1Y/bisnakandi-2692228-1280.jpg",
+      "heartIcon": "https://i.ibb.co/GkVghQj/105220.png",
+      "tourType": "Scenic",
+      "tripTitle": "Bisanakandi Scenic Beauty",
+      "price": 3500
+    }
+  ]
+  
