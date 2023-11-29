@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    // baseURL: 'https://tourist-guide-server-ten.vercel.app'
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://tourist-guide-server-ten.vercel.app'
+    // baseURL: 'http://localhost:5000'
 })
 
 const useAxiosSecure = () => {

@@ -10,7 +10,7 @@ const OverView = () => {
     <div>
       <h1>Best places we offer</h1>
 
-      <div className="grid grid-cols-2 gap-10 py-3">
+      <div className="grid grid-cols-2 gap-10 py-3 pr-7">
       <VideoPlayer videoUrl={videoUrl} />
       <VideoPlayer videoUrl={videoUrl1} />
       </div>
