@@ -25,7 +25,7 @@ const ServiceItem = ({item}) => {
           <p>{item.price}</p>
           <div className="card-actions">
 
-            <Link to={'/packageDetail'}>
+            <Link to={`/packageDetail/${item._id}`}>
             
             <button className="btn btn-primary">View Package</button>
             </Link>

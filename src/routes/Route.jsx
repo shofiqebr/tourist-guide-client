@@ -41,8 +41,9 @@ import AllStories from "../pages/home/touriststory/storydetil/AllStories";
           element: <DashBoard></DashBoard>,
         },
         {
-          path: 'packageDetail',
+          path: 'packageDetail/:id',
           element: <PackageDetail></PackageDetail>,
+          loader: (params)=>fetch(`https://tourist-guide-server-ten.vercel.app/service/${params.id}`)
         },
         {
           path: 'allpackages',
