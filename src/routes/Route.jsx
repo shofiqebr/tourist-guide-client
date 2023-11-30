@@ -24,6 +24,11 @@ import MyProfile from './../pages/dashboard/myprofile/MyProfile';
 import AddPackage from './../pages/dashboard/addpackage/AddPackage';
 import ManageUsers from './../pages/dashboard/manageusers/ManageUsers';
 import TourGuideProfile from "../pages/home/tab/ourPackages/allPackages/TourGuideProfile";
+import MyBooking from "../pages/packageDetail/MyBooking";
+import MyWishlist from "../pages/home/tab/ourPackages/MyWishlist";
+import TouristProfile from "../pages/dashboard/TouristProfile";
+import GuideProfile from "../pages/dashboard/GuideProfile";
+import MyAssigned from "../pages/dashboard/MyAssigned";
 
   const router = createBrowserRouter([
     {
@@ -46,7 +51,7 @@ import TourGuideProfile from "../pages/home/tab/ourPackages/allPackages/TourGuid
         {
           path: 'packageDetail/:id',
           element: <PackageDetail></PackageDetail>,
-          loader: (params)=>fetch(`https://tourist-guide-server-ten.vercel.app/service/${params.id}`)
+          // loader: (params)=>fetch(`https://tourist-guide-server-ten.vercel.app/service/${params.id}`)
         },
         {
           path: 'allpackages',
@@ -79,6 +84,14 @@ import TourGuideProfile from "../pages/home/tab/ourPackages/allPackages/TourGuid
         {
           path:'tourguideprofile',
           element:<TourGuideProfile></TourGuideProfile>
+        },
+        {
+          path: 'mybooking',
+          element: <MyBooking></MyBooking>
+        },
+        {
+          path: 'mywishlist',
+          element: <MyWishlist></MyWishlist>
         }
       ]
     },
@@ -97,6 +110,18 @@ import TourGuideProfile from "../pages/home/tab/ourPackages/allPackages/TourGuid
         {
           path: '/dashboard/manageusers',
           element: <ManageUsers></ManageUsers>  
+        },
+        {
+          path: '/dashboard/touristprofile',
+          element: <TouristProfile></TouristProfile>
+        },
+        {
+          path:'/dashboard/guideprofile',
+          element: <GuideProfile></GuideProfile>
+        },
+        {
+          path:'/dashboard/myassigned',
+          element: <MyAssigned></MyAssigned>
         }
       ]
     }

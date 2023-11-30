@@ -12,17 +12,19 @@ const ServiceItem = ({item}) => {
       >
         <figure className="px-10 pt-10">
           <img
-            src={item.spotPhoto}
+            src={item?.spotPhoto}
             alt="Shoes"
             className="rounded-xl w-80 h-72"
           />
-
+          <Link to={'/mywishlist'}>
+          
           <span className="absolute top-12 right-12  bg-red-950 text-red-400"><FaRegHeart /></span>
+          </Link>
         </figure>
         <div className="card-body items-center text-center">
-          <h2 className="card-title">{item.tripTitle}</h2>
-          <p>{item.tourType}</p>
-          <p>{item.price}</p>
+          <h2 className="card-title">{item?.tripTitle}</h2>
+          <p>{item?.tourType}</p>
+          <p>{item?.price}</p>
           <div className="card-actions">
 
             <Link to={`/packageDetail/${item._id}`}>
