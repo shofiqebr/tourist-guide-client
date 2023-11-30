@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useGuide from "../../../../../hooks/useGuide";
 
 
@@ -29,7 +30,11 @@ const MeetGuide = () => {
         <td>{item.name}</td>
         <td>{item.email}</td>
         <td>{item.experience}</td>
-        <td><button>Details</button></td>
+        <td>
+          <Link to={'/tourguideprofile'}>
+          <button>Details</button>
+          </Link>
+          </td>
       </tr>
      )}
     

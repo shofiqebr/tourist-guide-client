@@ -11,12 +11,19 @@ import DashBoard from "../pages/dashboard/DashBoard";
 import PackageDetail from "../pages/packageDetail/PackageDetail";
 import AllPackages from "../pages/home/tab/ourPackages/allPackages/AllPackages";
 import TourType from "../pages/home/tourType/TourType";
-import StoryDetail from "../pages/home/touriststory/storydetil/AllStories";
+// import StoryDetail from "../pages/home/touriststory/storydetil/AllStories";
 import Story1 from "../pages/home/touriststory/storydetil/Story1";
 import Story2 from "../pages/home/touriststory/storydetil/Story2";
 import Story3 from "../pages/home/touriststory/storydetil/story3";
 import Story4 from "../pages/home/touriststory/storydetil/story4";
 import AllStories from "../pages/home/touriststory/storydetil/AllStories";
+// import AddPackage from "../pages/dashboard/addpackage/AddPackage";
+// import MyProfile from "../pages/dashboard/myprofile/MyProfile";
+// import ManageUsers from "../pages/dashboard/manageusers/ManageUsers";
+import MyProfile from './../pages/dashboard/myprofile/MyProfile';
+import AddPackage from './../pages/dashboard/addpackage/AddPackage';
+import ManageUsers from './../pages/dashboard/manageusers/ManageUsers';
+import TourGuideProfile from "../pages/home/tab/ourPackages/allPackages/TourGuideProfile";
 
   const router = createBrowserRouter([
     {
@@ -35,10 +42,6 @@ import AllStories from "../pages/home/touriststory/storydetil/AllStories";
         {
             path: 'register',
             element: <Register></Register>,
-        },
-        {
-          path: 'dashboard',
-          element: <DashBoard></DashBoard>,
         },
         {
           path: 'packageDetail/:id',
@@ -72,9 +75,31 @@ import AllStories from "../pages/home/touriststory/storydetil/AllStories";
         {
           path: 'story4',
           element: <Story4></Story4>
+        },
+        {
+          path:'tourguideprofile',
+          element:<TourGuideProfile></TourGuideProfile>
         }
       ]
     },
+    {
+      path: '/dashboard',
+      element: <DashBoard></DashBoard>,
+      children: [
+        {
+          path: '/dashboard/myprofile',
+          element: <MyProfile></MyProfile>  
+        },
+        {
+          path: '/dashboard/addpackage',
+          element: <AddPackage></AddPackage>  
+        },
+        {
+          path: '/dashboard/manageusers',
+          element: <ManageUsers></ManageUsers>  
+        }
+      ]
+    }
   ]);
 
 export default router;

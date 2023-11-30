@@ -13,7 +13,7 @@ const Dropdown = () => {
     return (
         <div className="flex-none">
        
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end z-50">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <img alt="" src={user?.photoURL} />

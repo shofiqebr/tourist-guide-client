@@ -38,8 +38,9 @@ const Register = () => {
     // }
     createUser(email,password)
     .then(res => {
-      handleUpdateProfile(name, img)
+      handleUpdateProfile (name, img)
           .then(() => {
+            reset();
               toast.success('User created successfully');
               navigate('/')
 
